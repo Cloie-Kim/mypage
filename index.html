@@ -1,90 +1,68 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset=“UTF-8” />
-        <meta http-equiv=“X-UA-Compatible” content=“IE=edge” />
-        <meta name=“viewport” content=“width=device-width, initial-scale=1.0” />
-        <meta property=“og:title” content=“김서영의 프로필 링크” />
-        <meta property=“og:description” content=“김서영의 프로필 링크입니다.” />
-        <meta property=“og:image” content=“공유할 이미지” />
-        <title>김서영의 프로필 링크</title>
-        <style>
-            @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
-*           {
-             font-family: "Pretendard",serif;
-            }
-            body{
-                background-color: #5f49ec;
-            }
-            .profile{
-                width: 100px;
-                height: 100px;
-                border-radius: 100%;
-                
-                border: 2px solid white;
-                
-                background-image: url('왁.jpg');
-                background-position: center;
-                background-size: cover;
-            }
-            .main{
-                color: white;
-                font-size: 20px;
+<html lang="en">
 
-                margin-top: 30px;
-                margin-bottom: 10px;
-            }
-            .seb{
-                color: white;
-                font-size: 14px;
-                margin-top: 0px;
-                margin-bottom: 30px;
-            }
-            .wrap{
-                width: 300px;
-                margin: 30px auto 0px auto;
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2023 Bucket List</title>
+    <style><style>
+        @import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap');
+        *{
+            font-family: 'Do Hyeon', sans-serif;
+            font-family: 'IBM Plex Sans KR', sans-serif;
+        }
+        
+        .title {
+            color: white;
+            background-color: red);
+            font-size: 24px;
+            padding: 4px 14px;
+            border-radius: 8px;
+        }
 
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-            }
-            .wrap>a{
-                width: 300px;
-                height: 50px;
-                background-color: white;
-               
-                border-radius: 8px;
-                margin-bottom: 10px;
-               
-                font-size: 14px;
-                font-weight: bold;
-                color: #5f49ec;
-               
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
+        .background {
+            width: 360px;
+            background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bg-grid.png");
+        }
 
-                text-decoration: none;
+        .message {
+            font-weight: bold;
+            color: black;
+        }
 
-                box-shadow:3px 3px 5px 0px black ;
-            }
-            .wrap>a:hover { 
-                background-color: #f2f2f2;
-                font-size: 20px;
-            }
-            </style>
-    </head>
-    <body>
-        <div class="wrap"> 
-            <div class="profile"></div>
-            <h1 class="main"> 김서영</h1>
-            <h2 class="seb">코딩 배우는 중
-            </h2>
-            <a target="_blank" href="https://blog.naver.com/sierra3144">블로그_별하일기</a>
-            <a target="_blank" href="https://www.youtube.com/channel/UCEh-GYPr8cjurpZvu1Kc_iw">유튜브_별하일기</a>
-            <a target="_blank" href="https://www.instagram.com/ambition_162/">인스타그램</a>
-        </div>
-    </body>
+        .bucket {
+            width: 160px;
+            height: 160px;
+        }
+
+        .img1 {
+            background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bucket-red.png");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .img2 {
+            background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bucket-lightred.png");
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/sparta-bucket2.css">
+</head>
+
+<body class="background center">
+    <h1 class="title">2023년 신년계획</h1>
+    <p class="message">올해는 꼭 모두 지키자!</p>
+    <div class="row flex-row wrap">
+        <div class="bucket img1 center">1</div>
+        <div class="bucket img2 center">2</div>
+        <div class="bucket img2 center">3</div>
+        <div class="bucket img1 center">4</div>
+        <div class="bucket img1 center">5</div>
+        <div class="bucket img2 center">6</div>
+    </div>
+
+</body>
+
 </html>
